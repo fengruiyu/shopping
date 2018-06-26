@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:gravity="center_vertical"
+    >
+    <CheckBox
+        android:id="@+id/child_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:id="@+id/child_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/product_title_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="商品标题"
+            />
+        <TextView
+            android:id="@+id/product_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="¥0.0"
+            />
+    </LinearLayout>
+    <com.example.dell.shopping.MyAddSubView
+        android:id="@+id/adder_subtractor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></com.example.dell.shopping.MyAddSubView>
+
+</LinearLayout>
